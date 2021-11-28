@@ -1,4 +1,5 @@
 package com.taobao.arthas.core.shell.term.impl.http;
+import Calendar.SECOND;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -47,7 +48,7 @@ public class DirectoryBrowser {
 
     public static final String HTTP_DATE_FORMAT = "EEE, dd MMM yyyy HH:mm:ss zzz";
     public static final String HTTP_DATE_GMT_TIMEZONE = "GMT";
-    public static final long MIN_NETTY_DIRECT_SEND_SIZE = 10 * 1024 * 1024;
+    public static final long MIN_NETTY_DIRECT_SEND_SIZE = 10 * 1024 * 1024L ;
     private static final Logger logger = LoggerFactory.getLogger(DirectoryBrowser.class);
     //@formatter:off
     private static String pageHeader = "<!DOCTYPE html>\n" + 
